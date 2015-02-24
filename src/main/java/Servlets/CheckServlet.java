@@ -34,6 +34,7 @@ public class CheckServlet extends HttpServlet {
 
                    session.setAttribute("role",user.getRole());
                    resp.sendRedirect("/index.jsp");
+                   return;
                }
             }
 

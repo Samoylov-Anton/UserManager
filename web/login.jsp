@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action="CheckServlet" method="POST">
+<form action="/start" method="POST">
     Email: <input type="text" name="email"/>
     Password: <input type="text" name="password"/>
     <input type="submit" name="next" value="Enter >>"/>
