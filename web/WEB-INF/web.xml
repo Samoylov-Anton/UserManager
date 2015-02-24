@@ -5,4 +5,33 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
 
+    <servlet>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>servlets.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>FiltreServlet</servlet-name>
+        <servlet-class>servlets.FiltreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FiltreServlet</servlet-name>
+        <url-pattern>/filtre</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>FiltreServlet</filter-name>
+        <filter-class>servlets.FiltreServlet</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltreServlet</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
+
 </web-app>
