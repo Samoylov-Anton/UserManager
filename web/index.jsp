@@ -5,7 +5,9 @@
     <title></title>
 </head>
 <body>
-
+ <form action="newuser.jsp" method="post">
+     <input type="submit" name="newuser" value="Create User"/>
+ </form>
 <jsp:useBean id="UserParamList" scope="request" class="general.UsersList" />
 
 <c:set var="userparam" value="${UserParamList.usersParam}" />
