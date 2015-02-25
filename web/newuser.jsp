@@ -11,6 +11,7 @@
     Name: <input type="text" name="email"/>
     Email: <input type="text" name="email"/>
     Password: <input type="text" name="password" />
+    <%= request.getParameter("error")%>
     <input type="submit" name="creatuser" value="Create"/>
 </form>
 

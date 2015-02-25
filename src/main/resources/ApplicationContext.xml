@@ -8,6 +8,7 @@
     <bean name="UserParam" class="table.UserParam"/>
     <bean name="UserParamDaoImpl" class="dao.dao.impl.UserParamDaoImpl"/>
     <bean name="UsersDaoImpl" class="dao.dao.impl.UsersDaoImpl"/>
+    <bean name="CheckCreateUser" class="general.CheckCreateUser"/>
 
 
 </beans>

@@ -1,6 +1,7 @@
 package table;
 
 import javax.persistence.*;
+import java.util.TimeZone;
 
 @Entity
 @Table(name = "userparam")
@@ -20,13 +21,13 @@ public class UserParam {
     private String password;
 
     @Column(name = "timezone")
-    private Integer timezone;
+    private TimeZone timezone;
 
     @Column(name = "datetimecreate")
-    private Integer datetimecreate;
+    private String datetimecreate;
 
     @Column(name = "datetimeedit")
-    private Integer datetimeedit;
+    private String datetimeedit;
 
     @Column(name = "role")
     private String role;
@@ -63,27 +64,27 @@ public class UserParam {
         this.password = password;
     }
 
-    public Integer getTimezone() {
+    public TimeZone getTimezone() {
         return timezone;
     }
 
-    public void setTimezone(Integer timezone) {
+    public void setTimezone(TimeZone timezone) {
         this.timezone = timezone;
     }
 
-    public Integer getDatetimecreate() {
+    public String getDatetimecreate() {
         return datetimecreate;
     }
 
-    public void setDatetimecreate(Integer datetimecreate) {
+    public void setDatetimecreate(String datetimecreate) {
         this.datetimecreate = datetimecreate;
     }
 
-    public Integer getDatetimeedit() {
+    public String getDatetimeedit() {
         return datetimeedit;
     }
 
-    public void setDatetimeedit(Integer datetimeedit) {
+    public void setDatetimeedit(String datetimeedit) {
         this.datetimeedit = datetimeedit;
     }
 
@@ -94,4 +95,6 @@ public class UserParam {
     public void setRole(String role) {
         this.role = role;
     }
+
+
 }
