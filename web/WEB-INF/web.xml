@@ -33,5 +33,23 @@
         <url-pattern>/index.jsp</url-pattern>
     </filter-mapping>
 
+    <servlet>
+        <servlet-name>FiltreServletLogin</servlet-name>
+        <servlet-class>servlets.FiltreServletLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FiltreServletLogin</servlet-name>
+        <url-pattern>/filtrelogin</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>FiltreServletLogin</filter-name>
+        <filter-class>servlets.FiltreServletLogin</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltreServletLogin</filter-name>
+        <url-pattern>/login.jsp</url-pattern>
+    </filter-mapping>
+
 
 </web-app>

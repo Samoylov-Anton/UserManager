@@ -14,8 +14,8 @@
 
 <form action="/start" method="POST">
     Email: <input type="text" name="email"/>
-    Password: <input type="text" name="password"/>
-    <input type="submit" name="next" value="Enter >>"/>
+    Password: <input type="password" name="password" />
+    <input type="submit" name="enter" value="Enter >>"/>
 </form>
 
 </body>
