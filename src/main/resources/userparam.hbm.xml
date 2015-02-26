@@ -11,9 +11,9 @@
         <property name="email" column="email" type="java.lang.String"/>
         <property name="nickname" column="nickname" type="java.lang.String"/>
         <property name="password" column="password" type="java.lang.String"/>
-        <property name="timezone" column="timezone" type="java.lang.Integer"/>
-        <property name="datetimecreate" column="datetimecreate" type="java.lang.Integer"/>
-        <property name="datetimeedit" column="datetimeedit" type="java.lang.Integer"/>
+        <property name="timezone" column="timezone" type="java.util.TimeZone"/>
+        <property name="datetimecreate" column="datetimecreate" type="java.lang.String"/>
+        <property name="datetimeedit" column="datetimeedit" type="java.lang.String"/>
         <property name="role" column="role" type="java.lang.String"/>
     </class>
 

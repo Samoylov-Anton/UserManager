@@ -43,10 +43,8 @@ public class CheckCreateUser {
     }
 
     public String getTimeCreate(){
-
-        DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
         Date date = new Date();
 
-       return df.format(date.getDate());
+       return date.toString();
     }
 }

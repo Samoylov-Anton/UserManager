@@ -7,8 +7,8 @@
 </head>
 <body>
 
-<form action="/start" method="POST">
-    Name: <input type="text" name="email"/>
+<form action="/check" method="POST">
+    Name: <input type="text" name="nickname"/>
     Email: <input type="text" name="email"/>
     Password: <input type="text" name="password" />
     <%= request.getParameter("error")%>
