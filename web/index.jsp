@@ -13,18 +13,25 @@
 <c:set var="userparam" value="${UserParamList.usersParam}" />
 
 <c:forEach items="${userparam}" var="user">
-    <h2>
-        <c:out value="${user.nickname}"/>
-    </h2>
-    <h2>
-        <c:out value="${user.email}"/>
-    </h2>
-    <h2>
-        <c:out value="${user.role}"/>
-    </h2>
-    <h2>
-        <c:out value="${user.email}"/>
-    </h2>
+
+        <h4>Имя: </h4><c:out value="${user.nickname}"/>
+
+        <h4>Email: </h4>   <c:out value="${user.email}"/>
+
+        <h4>Роль: </h4>  <c:out value="${user.role}"/>
+
+        <h4>Дата создания: </h4>  <c:out value="${user.datetimecreate}"/>
+
+        <h4>Дата последнего изменения: </h4> <c:out value="${user.datetimeedit}"/>
+
+        <h4>TimeZone: </h4> <c:out value="${user.timezone}"/>
+    <% if (session.getAttribute("role").equals("admin")){ %>
+    <form action="edituser.jsp" method="get" >
+        <input type="hidden" name="id" value= "${user.id}">
+        <input type="submit" name="edit" value="edit">
+    </form>
+    <%}%>
+   <h1> ______________________________________________________________________________  </h1>
 </c:forEach>
 
 </body>

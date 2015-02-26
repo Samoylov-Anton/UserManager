@@ -11,7 +11,9 @@
     Name: <input type="text" name="nickname"/>
     Email: <input type="text" name="email"/>
     Password: <input type="text" name="password" />
-    <%= request.getParameter("error")%>
+    <%if (session.getAttribute("error") != null){ %>
+    <%= session.getAttribute("error")%>
+    <%} %>
     <input type="submit" name="creatuser" value="Create"/>
 </form>
 

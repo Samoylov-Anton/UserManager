@@ -9,6 +9,7 @@
     <bean name="UserParamDaoImpl" class="dao.dao.impl.UserParamDaoImpl"/>
     <bean name="UsersDaoImpl" class="dao.dao.impl.UsersDaoImpl"/>
     <bean name="CheckCreateUser" class="general.CheckCreateUser"/>
+    <bean name="SerchUserOnId" class="general.SerchUserOnID"/>
 
 
 </beans>
